@@ -8,6 +8,7 @@ class MovementSystem {
 
 public:
 	void movePlayer(Entity* player, char direction) {
+
 		Position* position = player->getComponent<Position>();
 		if (direction == 'w' || direction == 'W') {
 			position->y++;
@@ -244,9 +245,19 @@ public:
 					}
 				}
 
-				printStatus(&player);
-				std::cin >> direction;
+				do {
+					printStatus(&player);
+					std::cin >> direction;
+					if (direction != 'w' && direction != 'W' && direction != 'a' && direction != 'A' && direction != 's' && direction != 'S' && direction != 'd' && direction != 'D') {
+						std::cout << "Invalid choice." << std::endl;
+					}
+					else {
+						break;
+					}
+					
+				} while (true);
 				movementSystem.movePlayer(&player, direction);
+				
 
 				// The game will generate a room:
 			// if the room is empty, the player will get points
