@@ -39,6 +39,10 @@ by opening a chest with points and by defeating a monster.
 - 100 points if an enemy is defeates.
 - 50 points if the player finds a chest.
 - 10 points if the player goes to an empty room.
+# Combat system:
+- The player chooses a weapon that is on their inventory to attack (swords can damage tanks, bows can damage rangers and daggers can damage assasins).
+- The number of damage from the player's weapon is substracted from the enemy's health and the amount of damage than the enemy does is substracted from, the player's health.
+- This goes until either the enemy or the player dies.
 
 
 
