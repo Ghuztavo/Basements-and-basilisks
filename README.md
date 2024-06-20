@@ -26,14 +26,14 @@ by opening a chest with points and by defeating a monster.
 
 
 # Features:
--Procedurally Generated Dungeons: Every playthrough is unique with different layouts and challenges.
+- Procedurally Generated Dungeons: Every playthrough is unique with different layouts and challenges.
 
--Turn-Based Combat: Engage in strategic battles where every move matters.
+- Turn-Based Combat: Engage in strategic battles where every move matters.
 
--ECS Architecture: A modular system that separates data from behavior, allowing for easy expansion and maintenance.
+- ECS Architecture: A modular system that separates data from behavior, allowing for easy expansion and maintenance.
 
 # Controls:
--'W' 'A' 'S' 'D' to navigate the dungeon
+'W' 'A' 'S' 'D' to navigate the dungeon
 # Scoring system:
 - Player gets this quantity of points for doing these actions:
 - 100 points if an enemy is defeates.
