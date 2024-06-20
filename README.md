@@ -7,9 +7,29 @@ Our ECS Game
 a infinate loop dungeon which have no hope to escape and the only thing for them to
 do is to survive as long as possible before they meet their inevitable end.
 
+# How the game works:
+
+Text based dungeon crawler / rouge like game with scoring system where the player will advance through rooms where
+each time the player advances there will be three possibilities : an empty room, a room with a chest that can give 
+extra points, a healing potion, or an armor that has only one use and then breaks, or a room with a monster.
+
+There will be three types of monsters : a big monster that deals a lot of damage but is slow, a smaller 
+monster that deals low damage but is fast, and a ceiling monster.
+
+The player will have three weapon options to deal with the monster in the room depending on the monster, 
+a sword that counters the big monster, daggers that counters the small monster,
+and bow and arrow that counters the ceiling monster.
+
+Every time the player passes through a room they get points, the player gets extra points 
+by opening a chest with points and by defeating a monster.
+
+
+
 # Features:
--Procedurally Generated Dungeons: Every playthrough is unique with different layouts and challenges.\
--Turn-Based Combat: Engage in strategic battles where every move matters.\
+-Procedurally Generated Dungeons: Every playthrough is unique with different layouts and challenges.
+
+-Turn-Based Combat: Engage in strategic battles where every move matters.
+
 -ECS Architecture: A modular system that separates data from behavior, allowing for easy expansion and maintenance.
 
 # Controls:
