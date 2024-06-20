@@ -40,10 +40,13 @@ by opening a chest with points and by defeating a monster.
 - 50 points if the player finds a chest.
 - 10 points if the player goes to an empty room.
 # Combat system:
-- The player chooses a weapon that is on their inventory to attack (swords can damage tanks, bows can damage rangers and daggers can damage assasins).
+- The player chooses between attacking, using a healing potion, using armour or run away from the enemy.
+- If player chooses a weapon that is on their inventory to attack (swords can damage tanks, bows can damage rangers and daggers can damage assasins).
 - The number of damage from the player's weapon is substracted from the enemy's health and the amount of damage than the enemy does is substracted from, the player's health.
-- This goes until either the enemy or the player dies.
-
+- If the player chooses healing potion the player is going to use a healing potion if they have one and health of the player is going to be restored. Then the healing potion breaks.
+- If the player uses an armour the player is going to use the armour if they have one and they block 1 attack from the enemy. Then the armour breaks.
+- If the player decides to escape the player is going to have a 50% chance to skip the fight and continue moving.
+- This goes until either the enemy or the player dies or the player escapes.
 
 # Entities:
 
