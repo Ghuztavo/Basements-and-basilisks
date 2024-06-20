@@ -45,4 +45,23 @@ by opening a chest with points and by defeating a monster.
 - This goes until either the enemy or the player dies.
 
 
+# Entities:
+
+When the main loop starts the player will be created as an entity with a series of comonents:
+- health component
+- position component
+- armor component
+- and inventory component: the inventory component will have a list of weapons which will be a vector of entities with damage component,
+ a number of potions(a limit of 3) and number of armor (a limit of 1)
+
+When the game start, a room entity will be created that will have the possibility to be an empty room which will return the entity empty, or
+it can have a chest which will add the chest component to the room entity, or it can also have a monster which will add a monster component.
+
+- If the room entity has a chest component, the game will then create a chest entity that will have the possibility to either have gold which means extra points,
+or it can have a potion which will add a potion to the inventory of the player, or it can have armor which will add an armor to the inventory of the player.
+- If the room entity has a monster component, the game will create a monster entity that can be of Tank type and it will add a health component and a damage component to it,
+  the monster can also be an assassin type monster which will add the same components but with different numbers, or it can also be a ranger type monster which will be the same
+  as the previous ones but again, with different numbers. The type of the monster is important for the combat of the game.
+
+
 
