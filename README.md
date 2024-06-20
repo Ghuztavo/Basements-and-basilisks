@@ -38,8 +38,7 @@ by opening a chest with points and by defeating a monster.
 - Player gets this quantity of points for doing these actions:
 -100 points if an enemy is defeates.
 -50 points if the player finds a chest.
--10 points if the player goes to an empty room.**
-
+-10 points if the player goes to an empty room.
 
 
 
